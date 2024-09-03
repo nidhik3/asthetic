@@ -13,22 +13,23 @@
 // <weight>: Use a value from 400 to 900 */
 
 .font {
-  font-family: "Playfair Display", serif !important;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.ibm-plex-sans-medium {
-	font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 500;
+	font-family: "Playfair Display", serif !important;
+	font-optical-sizing: auto;
+	font-weight: 400;
 	font-style: normal;
   }
+  .ibm-plex-sans-medium {
+	  font-family: "IBM Plex Sans", sans-serif;
+	  font-weight: 500;
+	  font-style: normal;
+	}
+	
   
-
-* {
-	font-family: "IBM Plex Sans", sans-serif;
-}
-
+  * {
+	  font-family: "Space Grotesk", sans-serif;
+  }
+  
+  
 
 
 a {
@@ -59,14 +60,29 @@ a:hover {
 }
 
 .black {
-    height: 7vh;
+    height: 6vh;
     background-color: black;
     color: white !important;
 	display: flex !important;
 	align-items: center !important;
     text-align: center;
 	justify-content: center !important;
-    font-weight: 500;
+    /* font-weight: 500; */
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 20px;
+  
+}
+.transparent{
+    height: 6vh;
+    background-color: transparent;
+    color: black;
+	border: 2px solid black;
+	display: flex !important;
+	align-items: center !important;
+    text-align: center;
+	justify-content: center !important;
+    /* font-weight: 500; */
     padding: 5px 15px;
     font-size: 13px;
     border-radius: 20px;
@@ -81,34 +97,38 @@ a:hover {
     align-items: center !important;
     text-align: center;
     justify-content: center !important;
-    font-weight: 500;
+    /* font-weight: 500; */
     padding: 5px 15px;
     font-size: 13px;
     border-radius: 20px;
 }
 
 .animated-random-gradient {
-    height: 100vh; /* Adjust this as needed */
+    height: 100vh; /* Adjust as needed */
     background: linear-gradient(45deg, 
-        #14D5A9 20%, 
-        #1179C4 40%, 
-        #14D5A9 60%, 
-        #1179C4 80%);
-    background-size: 200% 200%;
-    animation: randomGradientAnimation 8s ease infinite;
+        #14D5A9 25%, 
+        #1179C4 35%, 
+        #14D5A9 50%, 
+        #1179C4 65%, 
+        #14D5A9 75%);
+    background-size: 300% 300%;
+    animation: randomGradientAnimation 10s ease infinite;
 }
 
 @keyframes randomGradientAnimation {
     0% {
-        background-position: 0% 0%;
+        background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 100%;
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 0%;
+        background-position: 0% 50%;
     }
 }
+
+
+
 
 
 
@@ -136,6 +156,10 @@ a:hover {
 
 .white:hover {
     outline-color: rgba(255, 255, 255, 0.7);
+}
+
+.t1{
+	font-size:45px;
 }
 
 
