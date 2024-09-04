@@ -1,45 +1,81 @@
-<style>
-    .fs , .fs:hover{
-        color: white ;
-    }
-</style>
 <!-- ======= Footer ======= -->
-<section class="space" style="background-color: black; color: white;">
-    <div class="container">
-        <div class="row pb-5">
-            <div class="col-md-12 text-center">
-                <a href="Main" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"  style="height:5vh;" >
-                    ENCOME</a>
+
+<footer id="footer">
+
+    <div class="footer-top ">
+        <div class="container">
+            <div class="row side">
+
+                <div class="col-lg-3 col-md-6 footer-links qlinks">
+                    <h4>NAVIGATION</h4>
+                    <ul>
+                        <li> <a href="Main">Home</a></li>
+                        <li> <a href="">About</a></li>
+                        <li> <a href="">Features</a></li>
+                        <li> <a href="">Pricing</a></li>
+                        <li> <a href="">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>FEATURES</h4>
+                    <ul>
+                        <li> <a href="#"> Patient Management</a></li>
+                        <li> <a href="#">For Specialists</a></li>
+                        <li> <a href="#">Integrated Payments</a></li>
+                        <li> <a href="#">Prescription Ease</a></li>
+                        <li> <a href="#">Analytics & Reports</a></li>
+                        <li> <a href="#">Cloud Security</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li> <a href="Privacy">Privacy Policy</a></li>
+                        <li> <a href="Terms">Terms of Service</a></li>
+                        <li> <a href="Disclaimer">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links qlinks">
+                    <h4>TALK TO US</h4>
+                    <ul>
+                        <li> <a href="">support@aesthetics.ai</a></li>
+                        <li> <a href="">+00 0000000000</a></li>
+                        <li> <a href="">Contact </a></li>
+                        <li> <a href="">Facebook</a></li>
+                        <li> <a href="">Instagram</a></li>
+                        <li> <a href="">Linkedin</a></li>
+                    </ul>
+                </div>
+
+
+
+
             </div>
         </div>
-        <div class="row pt-3 d-flex justify-content-around">
-            <div class="col-md-6">
-            <ul class="d-flex justify-content-evenly">
-                <!-- <li><a class="nav-link fs scrollto active" href="Main">Home</a></li> -->
-                <li><a class="nav-link fs scrollto" href="">Solutions</a></li>
-                <li><a class="nav-link fs scrollto" href="">Cases</a></li>
-                <li><a class="nav-link fs scrollto " href="">Blogs</a></li>
-                <li><a class="nav-link fs scrollto" href="">Pricing</a></li>
-                <li><a class="nav-link fs scrollto" href="">About</a></li>
-                <li><a class="nav-link fs scrollto" href="Contact">Contact</a></li>
-              </ul>
+    </div>
+
+<hr>
+
+
+    <div class="container py-4 text-center">
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-3">
+                <img src="assets/img/flogo.png" alt="" >
+            </div>
+            <div class="col-md-8 d-flex align-items-center" >
+                <div class="copyright-text">
+                    <p> © Designed by The Odin. All Rights Reserved. </p>
+                </div>
             </div>
         </div>
     </div>
 
 
-
-    
-
-</section>
-
-
-
-
-
-
-<!-- ======= Footer ======= -->
-
+    </div>
+</footer><!-- End Footer -->
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
@@ -54,114 +90,3 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
-
-
-<!-- banner image  -->
- <script>
-  
- </script>
-<!-- banner image  -->
-
-
-<!-- Slider feedback -->
-<script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      speed: 5000, // Speed of the sliding effect
-      autoplay: {
-        delay: 0, // No delay between transitions
-        disableOnInteraction: false, // Keep sliding even when interacted
-      },
-      loopAdditionalSlides: 3, // Helps with continuous looping
-      freeMode: true, // Enables continuous scrolling
-      freeModeMomentum: false, // Disables momentum after releasing scroll
-    });
-  </script>
-  
-  
-<!-- Slider -->
-
-
-<!-- grey about -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const section = document.querySelector("#about");
-      const textElements = section.querySelectorAll(".row, .h, .black");
-  
-      const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                  textElements.forEach((el, index) => {
-                      setTimeout(() => {
-                          el.classList.add("visible");
-                      }, index * 100); // Faster delay between elements
-                  });
-                  observer.unobserve(section); // Stop observing after the effect is applied
-              }
-          });
-      }, { threshold: 0.1 });
-  
-      observer.observe(section);
-  });
-  </script>
-  
-  
-<!-- grey about -->
-
-<!-- bannertext -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const sections = document.querySelectorAll('section'); // Select all sections or specify as needed
-    
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const textElements = entry.target.querySelectorAll('.hiddenT');
-                    textElements.forEach((el, index) => {
-                        setTimeout(() => {
-                            el.classList.add("visible");
-                        }, index * 100); // Faster delay between elements
-                    });
-                    observer.unobserve(entry.target); // Stop observing after the effect is applied
-                }
-            });
-        }, { threshold: 0.1 });
-    
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    });
-    </script>
-    
-<!-- bannertext -->
-
-
-<!-- insight text -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const rows = document.querySelectorAll('.row'); // Select all rows or specify as needed
-    
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const textElements = entry.target.querySelectorAll('.hiddenL');
-                    textElements.forEach((el, index) => {
-                        setTimeout(() => {
-                            el.classList.add("visible");
-                        }, index * 150); // Adjust delay as needed
-                    });
-                    observer.unobserve(entry.target); // Stop observing after the effect is applied
-                }
-            });
-        }, { threshold: 0.1 });
-    
-        rows.forEach(row => {
-            observer.observe(row);
-        });
-    });
-    </script>
-    
-<!-- insight text -->
-

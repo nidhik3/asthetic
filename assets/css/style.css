@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-	color: inherit;
+	/* color: inherit; */
 	text-decoration: none;
 }
 
@@ -88,6 +88,99 @@ a:hover {
     border-radius: 20px;
   
 }
+.transparent-white{
+    height: 6vh;
+    background-color: transparent;
+    color: white;
+	border: 2px solid white;
+	display: flex !important;
+	align-items: center !important;
+    text-align: center;
+	justify-content: center !important;
+    /* font-weight: 500; */
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 20px;
+  
+}
+.gradient-border , .gradient-border:hover {
+    position: relative;
+    height: 6vh;
+    background-color: transparent;
+    color: transparent;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center;
+    justify-content: center !important;
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 20px;
+    z-index: 1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #14D5A9 0%, #1179C4 100%);
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 20px; /* Apply the border radius here */
+    padding: 2px; /* Thickness of the gradient border */
+    background: linear-gradient(90deg, #14D5A9 0%, #1179C4 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+
+.light-blue{
+    height: 6vh;
+    background-color: #E9F8FF;
+    color: black;
+	display: flex !important;
+	align-items: center !important;
+    text-align: center;
+	justify-content: center !important;
+    /* font-weight: 500; */
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 20px;
+	width: 188px;
+  
+}
+.join-us{
+    height: 6vh;
+    background-color: rgba(86, 85, 85,0.5);;
+    color:white;
+	display: flex !important;
+	align-items: center !important;
+    text-align: center;
+	justify-content: center !important;
+    /* font-weight: 500; */
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 20px;
+	width: 112px;
+	
+  
+}
+.gradient{
+	background: linear-gradient(180deg, #13D7A8 0%, #1179C4 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 1;
+  
+}
 
 .gradientb {
     height: 6vh;
@@ -132,6 +225,7 @@ a:hover {
 
 
 
+
 .black:hover {
     outline-color: rgba(0, 0, 0, 0.7);
 }
@@ -165,6 +259,39 @@ a:hover {
 
 
 
+.img1-container {
+    position: relative; /* This container will be used to position .txt1 absolutely */
+}
+
+.img1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.txt1 {
+    position: absolute; /* Overlay .txt1 on top of .img1 */
+    top: 13%;
+    left: 5%;
+    width: 100%;
+    padding: 20px; /* Add padding as needed */
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it is above the image */
+}
+.txt2 {
+    position: absolute; /* Overlay .txt1 on top of .img1 */
+    top: 15%;
+    left: 0%;
+    width: 100%;
+    padding: 20px; /* Add padding as needed */
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it is above the image */
+}
+
+
+
+
+
 
 
 /*--------------------------------------------------------------
@@ -177,7 +304,7 @@ a:hover {
 	right: 15px;
 	bottom: 15px;
 	z-index: 996;
-	background:black;
+	background:rgb(230, 226, 226);
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -214,7 +341,7 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a subtle border */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 	transition: all 0.5s;
-	z-index: 1;
+	z-index: 999;
 	padding: 10px 0;
 	
 }
@@ -649,15 +776,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-	background: #fff;
+	background:#1179C4;
 	padding: 0 0 30px 0;
-	color: #444444;
+	color: white;
 	font-size: 14px;
 	/* background: #ebf7fc; */
 }
 
 li{
-	font-size: 18px;
+	font-size: 15px;
     color: black !important;
 }
 
@@ -675,7 +802,7 @@ li{
 	padding: 0;
 	line-height: 1;
 	font-weight: 600;
-	color: #0f394c;
+	/* color: #0f394c; */
 }
 
 #footer .footer-newsletter form {
@@ -703,7 +830,7 @@ li{
 	background: none;
 	font-size: 16px;
 	padding: 0 20px;
-	background: #0f394c;
+	/* background: #0f394c; */
 	color: #fff;
 	transition: 0.3s;
 	border-radius: 0 4px 4px 0;
@@ -716,7 +843,7 @@ li{
 
 #footer .footer-top {
 	padding: 60px 0 30px 0;
-	background: #fff;
+	/* background: #fff; */
 }
 
 #footer .footer-top .footer-contact {
@@ -742,7 +869,7 @@ li{
 #footer .footer-top h4 {
 	font-size: 19px;
 	font-weight: bold;
-	color: #0f394c;
+	/* color: #0f394c; */
 	position: relative;
 	padding-bottom: 12px;
 }
@@ -775,7 +902,7 @@ li{
 }
 
 #footer .footer-top .footer-links ul a {
-	color: #777777;
+	color: white;
 	transition: 0.3s;
 	display: inline-block;
 	line-height: 1;
